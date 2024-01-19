@@ -39,6 +39,13 @@ dependencies {
 
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+  implementation 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+  implementation 'org.junit.jupiter:junit-jupiter-api:5.0.0-M4'
+  implementation 'org.mockito:mockito-all:2.0.2-beta'
+  implementation 'org.mockito:mockito-junit-jupiter:5.4.0'
+  implementation 'junit:junit:3.8.1'
+  implementation 'junit:junit:4.13.2'
+  implementation 'junit:junit-dep:4.11'
 }
 
 test {
