@@ -1,16 +1,29 @@
 package com.radiouvg.radiouvg;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Radio implements RadioFunc{
     private boolean power = false;
     private double fq;
     private boolean band = false;
     private double volume;
 
+    private ArrayList<Double> estacionesGuardadas = new ArrayList<>(Arrays.asList(1.1,2.2,3.3,4.4,5.5,6.6,7.7,8.8,9.9,10.10,11.11,12.12));
+
     public Radio(){
         this.power = false;
         this.fq = 0;
         this.band = false;
         this.volume = 0;
+    }
+
+    public ArrayList<Double> getEstacionesGuardadas() {
+        return estacionesGuardadas;
+    }
+
+    public void setEstacionesGuardadas(ArrayList<Double> estacionesGuardadas) {
+        this.estacionesGuardadas = estacionesGuardadas;
     }
 
     @Override
